@@ -1,6 +1,6 @@
-function dark{
+function dark(){
     return document.getElementById('style').href='/style-dark.css'
 }
-function light{
+function light(){
     return document.getElementById('style').href='/style.css'
 }
