@@ -1,6 +1,10 @@
 function dark(){
-    return document.getElementById('style').href='/style-dark.css'
+    document.getElementById('style').href='/style-dark.css'
+    console.log("Switched to dark mode")
+    return
 }
 function light(){
-    return document.getElementById('style').href='/style.css'
+    document.getElementById('style').href='/style.css'
+    console.log("Switched to light mode")
+    return
 }
