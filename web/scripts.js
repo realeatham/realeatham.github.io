@@ -15,13 +15,14 @@ function tempConvert(){
     const tempUnit = document.getElementById('tempUnit');
     const tempUnitWanted = document.getElementById('tempUnitWanted');
     const temp = document.getElementById('temp');
-    let newtemp
+    let newTemp;
     switch(tempUnit){
         case tempUnit == tempUnitWanted:
-            newtemp = temp;
+            newTemp = temp;
             break;
         case tempUnit == 'celsius', tempUnitWanted == 'fahrenheit':
-            newtemp = temp * (5/9) + 32
+            newTemp = temp * (5/9) + 32
             break;
     }
+    return newTemp;
 }
