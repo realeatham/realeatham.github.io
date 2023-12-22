@@ -11,7 +11,7 @@ function light(){
 };
 
 //temp converter functions
-tempConvert(){
+function tempConvert(){
     const tempUnit = document.getElementById('tempUnit');
     const tempUnitWanted = document.getElementById('tempUnitWanted');
     const temp = document.getElementById('temp');
