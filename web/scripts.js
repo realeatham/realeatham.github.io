@@ -20,7 +20,7 @@ function tempConvert(){
         case tempUnit == tempUnitWanted:
             newtemp = temp;
             break;
-        case tempUnit = 'celsius', tempUnitWanted = 'fahrenheit':
+        case tempUnit == 'celsius', tempUnitWanted = 'fahrenheit':
             newtemp = temp * (5/9) + 32
             break;
     }
