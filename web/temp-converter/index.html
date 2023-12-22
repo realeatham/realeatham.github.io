@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/scripts.js"></script> 
+        <title>Temperature Converter - Eatham's Website</title>
+        <link rel="stylesheet" href="/style-dark.css" id="style">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body id="top">
+        <ul class="nav">
+            <li class="nav"><a class="" href="/#top">Home</a></li>
+            <li class="nav"><a href="/#contact">Contact Info</a></li>
+            <li class="nav"><a href="/setup">My Setup</a></li>
+            <li class="nav" style="float:right"><button onclick="print();">Print this page</button></li>
+            <li class="nav" style="float:right"><button onclick="dark();">Dark Mode</button></li>
+            <li class="nav" style="float:right"><button onclick="light();">Light Mode</button></li>
+        </ul><br>
+        <h1>Temperature Converter</h1>
+        <p>
+            Convert Between Celsius, Fahrenheit and Kelvin
+        </p>
+        <form onchange="tempConvert()">
+            <label for="temp">Temperature:/label>
+            <input type="number" id="temp" name="temp">
+            <label for="tempUnit">Temperature</label>
+            <select id="tempUnit" name="tempUnit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+            <label for="tempUnitWanted">Temperature</label>
+            <select id="tempUnitWanted" name="tempUnitWanted">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </form>
+    </body>
+</html>
