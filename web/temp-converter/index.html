@@ -19,8 +19,8 @@
         <p>
             Convert Between Celsius, Fahrenheit and Kelvin
         </p>
-        <form onchange="tempConvert()">
-            <label for="temp">Temperature:/label>
+        <form>
+            <label for="temp">Temperature:</label>
             <input type="number" id="temp" name="temp">
             <label for="tempUnit">Temperature</label>
             <select id="tempUnit" name="tempUnit">
@@ -35,5 +35,7 @@
                 <option value="kelvin">Kelvin</option>
             </select>
         </form>
+        <button onclick="document.getElementById('demo').innerHTML=tempConvert()">Convert</button>
+        <p id="demo"></p>
     </body>
 </html>
