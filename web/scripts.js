@@ -34,7 +34,7 @@ function tempConvert(temp){
         newTemp = (temp - 32) * 5/9 + 273.15;
     }
     else if (tempUnit == 'kelvin'&&  tempUnitWanted == 'fahrenheit'){
-        newTemp = (temp- 273.15) 9/5 + 32;
+        newTemp = (temp - 273.15) * 9/5 + 32;
     }
     return newTemp;
-}
+};
