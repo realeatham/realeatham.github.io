@@ -13,7 +13,8 @@ function light(){
 
 //temp converter functions
 
-function tempConvert(temp){
+function tempConvert(){
+    const temp = document.getElementById('temp');
     const tempUnit = document.getElementById('tempUnit');
     const tempUnitWanted = document.getElementById('tempUnitWanted');
     let newTemp;
@@ -35,6 +36,9 @@ function tempConvert(temp){
     }
     else if (tempUnit == 'kelvin'&&  tempUnitWanted == 'fahrenheit'){
         newTemp = (temp - 273.15) * 9/5 + 32;
+    }
+    else{
+        newTemp = "An Error Occured, Original Temperature was " + temp
     }
     return newTemp;
 };
