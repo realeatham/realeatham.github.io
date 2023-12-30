@@ -15,8 +15,10 @@ function light(){
 
 function tempConvert(){
     const temp = document.getElementById('temp');
-    const tempUnit = document.getElementById('tempUnit');
-    const tempUnitWanted = document.getElementById('tempUnitWanted');
+    const tempUnitBox = document.getElementById('tempUnit');
+    const tempUnitWantedBox = document.getElementById('tempUnitWanted');
+    const tempUnit = tempUnitBox.options[tempUnitBox.selectedIndex].text;
+    const tempUnitWanted = tempUnitWantedBox.options[tempUnitWantedBox.selectedIndex].text;
     let newTemp;
     //i know this can be done with switch. i cannot work it out, if you know how to actually use it please help
     if (tempUnit == 'fahrenheit'&&  tempUnitWanted == 'celsius'){
