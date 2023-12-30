@@ -14,9 +14,10 @@ function light(){
 //temp converter functions
 
 function tempConvert(){
-    const temp = document.getElementById('temp');
+    const tempBox = document.getElementById('temp');
     const tempUnitBox = document.getElementById('tempUnit');
     const tempUnitWantedBox = document.getElementById('tempUnitWanted');
+    const temp = tempBox.options[tempBox.selectedIndex].text;
     const tempUnit = tempUnitBox.options[tempUnitBox.selectedIndex].text;
     const tempUnitWanted = tempUnitWantedBox.options[tempUnitWantedBox.selectedIndex].text;
     let newTemp;
