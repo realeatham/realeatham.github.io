@@ -19,11 +19,14 @@ function tempConvert(){
     const temp = document.getElementById('temp');
     let newTemp;
     //i know this can be done with switch. i cannot work it out, if you know how to actually use it please help
-    if (tempUnit == 'fahrenheit', tempUnitWanted == 'celsius') :{
+    if (tempUnit == 'fahrenheit', tempUnitWanted == 'celsius'){
         newTemp = (5/9) * (temp-32);
-    }
-    else if (tempUnit == 'celsius', tempUnitWanted == 'fahrenheit'):{
-        newTemp = (temp * 9/5) + 32
-    }
+    };
+    else if (tempUnit == 'celsius', tempUnitWanted == 'fahrenheit'){
+        newTemp = (temp * 9/5) + 32;
+    };
+    else if (tempUnit == 'celsius', tempUnitWanted == 'kelvin'){
+        newTemp = temp + 273.15;
+    };
     return newTemp;
 }
