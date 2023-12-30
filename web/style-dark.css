@@ -47,10 +47,10 @@ li.nav a {
   text-decoration: none;
 }
 
-li.nav a:hover:not(.active) {
+li.nav a:hover{
   background-color: ForestGreen;
 }
 
-a.active {
-  background-color: OrangeRed;
+a{
+  background-color: lightblue;
 }
