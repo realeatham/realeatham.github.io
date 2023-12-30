@@ -22,22 +22,22 @@ function tempConvert(){
     const tempUnitWanted = tempUnitWantedBox.options[tempUnitWantedBox.selectedIndex].text;
     let newTemp;
     //i know this can be done with switch. i cannot work it out, if you know how to actually use it please help
-    if (tempUnit == 'fahrenheit'&&  tempUnitWanted == 'celsius'){
+    if (tempUnit == 'Fahrenheit'&&  tempUnitWanted == 'Celsius'){
         newTemp = (5/9) * (temp-32);
     }
-    else if (tempUnit == 'celsius'&&  tempUnitWanted == 'fahrenheit'){
+    else if (tempUnit == 'Celsius'&&  tempUnitWanted == 'Fahrenheit'){
         newTemp = (temp * 9/5) + 32;
     }
-    else if (tempUnit == 'celsius'&&  tempUnitWanted == 'kelvin'){
+    else if (tempUnit == 'Celsius'&&  tempUnitWanted == 'Kelvin'){
         newTemp = temp + 273.15;
     }
-    else if (tempUnit == 'kelvin'&&  tempUnitWanted == 'celsius'){
+    else if (tempUnit == 'Kelvin'&&  tempUnitWanted == 'Celsius'){
         newTemp = temp - 273.15;
     }
-    else if (tempUnit == 'fahrenheit'&&  tempUnitWanted == 'kelvin'){
+    else if (tempUnit == 'Fahrenheit'&&  tempUnitWanted == 'Kelvin'){
         newTemp = (temp - 32) * 5/9 + 273.15;
     }
-    else if (tempUnit == 'kelvin'&&  tempUnitWanted == 'fahrenheit'){
+    else if (tempUnit == 'Kelvin'&&  tempUnitWanted == 'Fahrenheit'){
         newTemp = (temp - 273.15) * 9/5 + 32;
     }
     else{
