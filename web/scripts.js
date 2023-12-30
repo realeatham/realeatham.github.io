@@ -13,10 +13,9 @@ function light(){
 
 //temp converter functions
 
-function tempConvert(){
+function tempConvert(temp){
     const tempUnit = document.getElementById('tempUnit');
     const tempUnitWanted = document.getElementById('tempUnitWanted');
-    const temp = document.getElementById('temp');
     let newTemp;
     //i know this can be done with switch. i cannot work it out, if you know how to actually use it please help
     if (tempUnit == 'fahrenheit'&&  tempUnitWanted == 'celsius'){
@@ -32,10 +31,10 @@ function tempConvert(){
         newTemp = temp - 273.15;
     }
     else if (tempUnit == 'fahrenheit'&&  tempUnitWanted == 'kelvin'){
-        newTemp = (temp − 32) * 5/9 + 273.15;
+        newTemp = (temp - 32) * 5/9 + 273.15;
     }
     else if (tempUnit == 'kelvin'&&  tempUnitWanted == 'fahrenheit'){
-        newTemp = (temp − 273.15) 9/5 + 32;
+        newTemp = (temp- 273.15) 9/5 + 32;
     }
     return newTemp;
 }
