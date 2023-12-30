@@ -1,19 +1,20 @@
 // page theme functions
 
-function dark(){
-    document.getElementById('style').href='/style-dark.css';
+function dark() {
+    document.getElementById('style').href = '/style-dark.css';
     console.log("Switched to dark mode");
-    return
-};
-function light(){
-    document.getElementById('style').href='/style.css';
+    return;
+}
+function light() {
+    document.getElementById('style').href = '/style.css';
     console.log("Switched to light mode");
-    return
-};
+    return;
+}
 
 //temp converter functions
 
-function tempConvert(){
+function tempConvert() {
+    //Declaring Variables
     const tempBox = document.getElementById('temp');
     const tempUnitBox = document.getElementById('tempUnit');
     const tempUnitWantedBox = document.getElementById('tempUnitWanted');
@@ -21,7 +22,6 @@ function tempConvert(){
     const tempUnit = tempUnitBox.options[tempUnitBox.selectedIndex].text;
     const tempUnitWanted = tempUnitWantedBox.options[tempUnitWantedBox.selectedIndex].text;
     let newTemp;
-    //i know this can be done with switch. i cannot work it out, if you know how to actually use it please help
     if (tempUnit == 'Fahrenheit'&&  tempUnitWanted == 'Celsius'){
         newTemp = (5/9) * (temp-32);
     }
@@ -40,8 +40,11 @@ function tempConvert(){
     else if (tempUnit == 'Kelvin'&&  tempUnitWanted == 'Fahrenheit'){
         newTemp = (temp - 273.15) * 9/5 + 32;
     }
+    else if (tempUnit == tempUnitWanted){
+        newTemp = 'Cannot Convert to same type, original temperature was ' + temp
+    }
     else{
-        newTemp = "An Error Occured, Original Temperature was " + temp
+        newTemp = 'An Error Occured, Original Temperature was ' + temp
     }
     return newTemp;
 };
