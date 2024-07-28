@@ -79,3 +79,6 @@ a{
   display: table;
   clear: both;
 }
+hr {
+  border-color: lawngreen;
+}
