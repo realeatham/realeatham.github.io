@@ -82,3 +82,10 @@ a{
 hr {
   border-color: lawngreen;
 }
+footer {
+  text-align: center;
+  background-color: greenyellow;
+}
+.right {
+  text-align: right;
+}

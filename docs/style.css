@@ -78,3 +78,11 @@ a.active {
   display: table;
   clear: both;
 }
+
+footer {
+  text-align: center;
+  background-color: greenyellow;
+}
+.right {
+  text-align: right;
+}
