@@ -87,6 +87,9 @@ footer {
   background-color: greenyellow;
   color: black;
 }
+.footer {
+  color: black;
+}
 .right {
   text-align: right;
 }
