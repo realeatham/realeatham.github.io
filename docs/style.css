@@ -88,14 +88,10 @@ footer {
 }
 #page-container {
   position: relative;
-  min-height: 100vh;
+  min-height: 95vh;
 }
 #footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 2.5rem; 
-}
-#content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
 }
