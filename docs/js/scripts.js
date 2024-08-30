@@ -51,4 +51,7 @@ function tempConvert() {
     return newTemp;
 };
 
+function tempOutput() {
+    document.getElementById('newTemp').innerHTML=tempConvert('temp');
+}
 // @license-end
