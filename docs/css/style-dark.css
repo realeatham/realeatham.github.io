@@ -10,7 +10,7 @@ You should have received a copy of the GNU Affero General Public License along w
 -->
 */
 
-@import url('/src/Roboto-Thin.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
         background-color: darkgreen;
         text-align: center;
