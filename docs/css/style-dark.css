@@ -18,29 +18,13 @@ body {
         font-size: 1.2em;
         color: white;
 }
-h1 { 
+h1, h2, h3 { 
         color: blue;
         display: inline;
         border-style: solid;  
         background-color:lightblue;  
         border-color: red;
         border-radius: 5px;
-}
-h2 {
-        color: blue;  
-        display: inline;  
-        background-color:lightblue;  
-        border-style: solid;  
-        border-color: red;  
-        border-radius: 5px;
-}
-h3 {
-  color: blue;  
-  display: inline;  
-  background-color:lightblue;  
-  border-style: solid;  
-  border-color: red;  
-  border-radius: 5px;
 }
 a {  
         color: darkblue;
@@ -107,7 +91,7 @@ footer {
 }
 #page-container {
   position: relative;
-  min-height: 95vh;
+  min-height: 100vh;
 }
 #footer {
   position: absolute;
