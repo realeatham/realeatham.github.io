@@ -15,6 +15,13 @@ You should have received a copy of the GNU Affero General Public License along w
         <link id="style" rel="stylesheet" href="/style-dark.css">
         <meta name="google-site-verification" content="8uVDR7-3i_Wb7RiXZTJBZeTbUpC-4teDf3hi7JacU-Y" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat License (sometimes called MIT Licensed) */
+            var x = document.getElementById('ia');
+            x?.setAttribute('href', 'https://web.archive.org/web/' + String(window.location));
+            document.getElementById('ia').innerHTML = "Check on the internet archive?";
+            /* @license-end */
+        </script>
     </head>
     <body id="top">
         <ul class="nav">
@@ -29,7 +36,7 @@ You should have received a copy of the GNU Affero General Public License along w
         </ul><br>
         <h1>404 - Page Not Found</h1>
         <p>
-            Go <a href="/">Home</a>
+            <a href="/" id="ia">Go home?</a>
         </p>
     </body>
 </html>
