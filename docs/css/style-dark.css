@@ -17,6 +17,8 @@ body {
         font-family: Roboto, sans-serif;
         font-size: 1.2em;
         color: white;
+        width: 70%;
+        
 }
 h1, h2, h3 { 
         color: blue;
