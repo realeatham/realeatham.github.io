@@ -63,7 +63,7 @@ a{
   color: light-dark(blue, lightblue);
 }
 a:hover {
-  color: light-dark(lightblue,blue);
+  color: light-dark(purple,blue);
 }
   * {
   box-sizing: border-box;

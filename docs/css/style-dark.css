@@ -11,6 +11,9 @@ You should have received a copy of the GNU Affero General Public License along w
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+  color-scheme: dark;
+}
 body {
         background-color: darkgreen;
         text-align: center;
@@ -58,6 +61,9 @@ li.nav a:hover{
 
 a{
   color: lightblue;
+}
+a:hover {
+  color: blue;
 }
   * {
   box-sizing: border-box;
