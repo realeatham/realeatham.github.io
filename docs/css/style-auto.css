@@ -1,0 +1,112 @@
+/*
+<!--
+This file is part of Eatham's Website.
+
+Eatham's Website is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+Eatham's Website is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License along with Eatham's Website. If not, see <https://www.gnu.org/licenses/>. 
+-->
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+  color-scheme: light dark;
+}
+body {
+        background-color: light-dark(lightgreen, darkgreen);
+        text-align: center;
+        font-family: Roboto, sans-serif;
+        font-size: 1.2em;
+        color: light-dark(black, white);
+        
+}
+h1, h2, h3 { 
+        color: blue;
+        display: inline;
+        border-style: solid;  
+        background-color:lightblue;  
+        border-color: red;
+        border-radius: 5px;
+}
+a {  
+        color: darkblue;
+}
+
+/* Navbar */
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: Green;
+}
+
+li.nav {
+  float: left;
+}
+
+li.nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.nav a:hover{
+  background-color: ForestGreen;
+}
+
+a{
+  color: lightblue;
+}
+  * {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+hr {
+  border-color: light-dark(gray,lawngreen);
+}
+footer {
+  text-align: center;
+  background-color: greenyellow;
+  color: black;
+}
+.footer {
+  color: black;
+}
+.right {
+  text-align: right;
+}
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  width: 70%;
+  max-width: 70%;
+  margin: auto;
+}
+#footer {
+  bottom: 0;
+  width: 100%;
+}
+#link-box {
+  background-color: #4edb7d;
+  text-align: left;
+  max-width: 30%;
+  margin: auto;
+}

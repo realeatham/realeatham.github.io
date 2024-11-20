@@ -53,10 +53,6 @@ li.nav a {
 li.nav a:hover:not(.active) {
   background-color: ForestGreen;
 }
-
-a.active {
-  background-color: OrangeRed;
-}
 * {
   box-sizing: border-box;
 }
