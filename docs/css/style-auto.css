@@ -60,7 +60,7 @@ li.nav a:hover{
 }
 
 a{
-  color: lightblue;
+  color: light-dark(blue, lightblue);
 }
   * {
   box-sizing: border-box;
