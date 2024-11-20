@@ -98,3 +98,9 @@ footer {
   bottom: 0;
   width: 100%;
 }
+#link-box {
+  background-color: #4edb7d;
+  text-align: left;
+  padding: auto;
+  width: 30%;
+}
